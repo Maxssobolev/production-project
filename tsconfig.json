@@ -11,6 +11,7 @@
     //компилятор обрабатывает не только ts, но и js
     "allowJs": true,
     "moduleResolution": "node",
+    "strictNullChecks": true,
     //позволяет работать с пакетами, которые используют commonjs (используют импорт через require) как с обычными пакетами с помощью import
     "esModuleInterop": true,
     //вместо import * as React -> import React
