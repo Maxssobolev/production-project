@@ -1,19 +1,21 @@
 .navbar {
-  width: 100%;
-  background: var(--navbar-bg-color);
   display: flex;
   align-items: center;
-  padding: 20px;
-  height: var(--navbar-height);
   justify-content: flex-end;
+  padding: 20px;
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--navbar-bg-color);
 }
 
 .links {
   a {
     margin: 0 10px;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }

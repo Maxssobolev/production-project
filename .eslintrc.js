@@ -23,7 +23,7 @@ module.exports = {
     indent: [2, 2],
     'react/jsx-filename-extension': [2, { extensions: ['.js', 'jsx', 'tsx'] }],
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-floating-promises': 'warn',
+    '@typescript-eslint/no-floating-promises': [1, {ignoreVoid: true}],
     "@typescript-eslint/naming-convention": "warn"
     }
 }
