@@ -13,7 +13,9 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "jest:init": "jest --init",
-    "unit": "jest --config ./config/jest/jest.config.ts"
+    "unit": "jest --config ./config/jest/jest.config.ts",
+    "analyze:prod": "npm run build:prod --env analyzer=true",
+    "analyze:dev": "npm run build:dev --env analyzer=true"
   },
   "keywords": [],
   "author": "",

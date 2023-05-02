@@ -12,12 +12,12 @@ interface LangSwitcherProps {
 export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
   const { t, i18n } = useTranslation()
 
-  const toggle = () => {
+  const toggle = async () => {
     i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
   }
 
   return (
-    <AppButton onClick={toggle} className={classNames(classes.LangSwitcher, {}, [className])}>
+    <AppButton onClick={() => { void toggle() }} className={classNames(classes.LangSwitcher, {}, [className])}>
       {t('Язык')}
     </AppButton>
   )

@@ -19,5 +19,20 @@
       "}"
     ],
     "description": "Создать React-компонент по умолчанию. Импортируется scss-модуль и функция для работы с классами classnames."
+  },
+  "react test": {
+    "scope": "typescript, typescriptreact",
+    "prefix": "imrttt",
+    "body": [
+      "import { ${TM_FILENAME_BASE/(.test|.spec)//gi} } from './${TM_FILENAME_BASE/(.test|.spec)//gi}'",
+      "import { render, screen } from '@testing-library/react'",
+      "",
+      "describe('${TM_FILENAME_BASE/(.test|.spec)//gi}-test', () => {",
+      "  test('', () => {",
+      "    ",
+      "  })",
+      "})",
+    ],
+    "description": "Создать тест для компонента"
   }
 }
